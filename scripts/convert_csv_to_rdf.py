@@ -8,7 +8,7 @@ df = pd.read_csv("../data/articles.csv")
 g = Graph()
 
 # Définition de l’espace de noms
-EX = Namespace("http://example.org/articles#")
+EX = Namespace("http://myproject.org/ai_ontology#")
 
 # Ajouter des articles au graphe
 for _, row in df.iterrows():
@@ -20,6 +20,6 @@ for _, row in df.iterrows():
     g.add((article_uri, EX.hasContent, Literal(row["Article Content"])))
 
 # Sauvegarde du graphe RDF
-g.serialize("../data/rdf_data.rdf", format="turtle")
+g.serialize("../data/rdf_data.ttl", format="turtle")
 
 print("✅ Le fichier data.rdf a été généré avec succès !")

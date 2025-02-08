@@ -1,0 +1,7 @@
+@prefix ai: <http://myproject.org/ai_ontology#> .
+
+ai:Article_1 a ai:Article ;
+    ai:hasAuthor "John Doe" ;
+    ai:hasContent "L'intelligence artificielle révolutionne de nombreux secteurs..." ;
+    ai:hasDate "2024-02-01" ;
+    ai:hasTitle "Introduction à l'Intelligence Artificielle" .

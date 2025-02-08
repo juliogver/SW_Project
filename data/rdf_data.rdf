@@ -1,7 +1,0 @@
-@prefix ns1: <http://example.org/articles#> .
-
-ns1:Article_1 ns1:hasAuthor "John Doe" ;
-    ns1:hasContent "L'intelligence artificielle révolutionne de nombreux secteurs..." ;
-    ns1:hasDate "2024-02-01" ;
-    ns1:hasTitle "Introduction à l'Intelligence Artificielle" .
-

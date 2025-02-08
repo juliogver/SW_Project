@@ -1,19 +1,39 @@
-@prefix ex: <http://example.com/ontology#> .
+@prefix ai: <http://myproject.org/ai_ontology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ex:Article a rdfs:Class .
-ex:Author a rdfs:Class .
-ex:Topic a rdfs:Class .
+# Définition des classes principales
+ai:Article a rdfs:Class .
+ai:Author a rdfs:Class .
+ai:Topic a rdfs:Class .
 
-ex:hasTitle a rdf:Property ;
-    rdfs:domain ex:Article ;
+# Propriétés des articles
+ai:hasTitle a rdf:Property ;
+    rdfs:domain ai:Article ;
     rdfs:range rdfs:Literal .
 
-ex:hasAuthor a rdf:Property ;
-    rdfs:domain ex:Article ;
-    rdfs:range ex:Author .
+ai:hasAuthor a rdf:Property ;
+    rdfs:domain ai:Article ;
+    rdfs:range ai:Author .
 
-ex:hasContent a rdf:Property ;
-    rdfs:domain ex:Article ;
+ai:hasContent a rdf:Property ;
+    rdfs:domain ai:Article ;
+    rdfs:range rdfs:Literal .
+
+ai:hasDate a rdf:Property ;
+    rdfs:domain ai:Article ;
+    rdfs:range rdfs:Literal .
+
+ai:hasTopic a rdf:Property ;
+    rdfs:domain ai:Article ;
+    rdfs:range ai:Topic .
+
+# Définition d'une relation entre les auteurs et leurs articles
+ai:wroteArticle a rdf:Property ;
+    rdfs:domain ai:Author ;
+    rdfs:range ai:Article .
+
+# Ajout d'une propriété pour catégoriser les articles par domaine
+ai:hasDomain a rdf:Property ;
+    rdfs:domain ai:Article ;
     rdfs:range rdfs:Literal .
