@@ -22,4 +22,4 @@ for _, row in df.iterrows():
 # Sauvegarde du graphe RDF
 g.serialize("../data/rdf_data.ttl", format="turtle")
 
-print("✅ Le fichier data.rdf a été généré avec succès !")
+print("Le fichier data.rdf a été généré avec succès !")

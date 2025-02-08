@@ -30,4 +30,4 @@ csv_path = os.path.join(output_dir, "articles.csv")
 
 df.to_csv(csv_path, index=False, encoding="utf-8")
 
-print(f"✅ Le fichier dataset.csv a été généré avec succès dans : {csv_path}")
+print(f"Le fichier dataset.csv a été généré avec succès dans : {csv_path}")
