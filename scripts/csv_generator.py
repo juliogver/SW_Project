@@ -48,6 +48,50 @@ articles = [
         "Article Source": "Footmercato",
         "Article Content": "Le PSG assoit sa domination et impressionne les observateurs, le derby de Madrid électrise l’Espagne, le Real Madrid traverse une crise interne avec ses cadres, retrouvez dans votre revue de presse Foot Mercato les dernières informations de la presse sportive européenne."
     },
+    {
+        "ID": 5,
+        "Article Link": "https://www.lemonde.fr/sciences/article/2024/10/08/le-nobel-de-physique-celebre-les-pionniers-de-l-intelligence-artificielle_6346731_1650684.html",
+        "Article Title": "Le Nobel de physique célèbre les pionniers de l'intelligence artificielle",
+        "Article Date": "2024-10-08",
+        "Article Author Name": "Le Monde",
+        "Article Topics": "IA, Physique, Réseaux de neurones",
+        "Article Main Domain": "Intelligence Artificielle",
+        "Article Source": "Le Monde",
+        "Article Content": "Le Prix Nobel de physique 2024 a été décerné à John Hopfield et Geoffrey Hinton pour leurs travaux pionniers sur les réseaux de neurones artificiels, fondamentaux pour l'apprentissage automatique."
+    },
+    {
+        "ID": 6,
+        "Article Link": "https://www.lemonde.fr/economie/article/2024/10/09/openai-va-ouvrir-un-bureau-a-paris_6347114_3234.html",
+        "Article Title": "OpenAI va ouvrir un bureau à Paris",
+        "Article Date": "2024-10-09",
+        "Article Author Name": "Le Monde",
+        "Article Topics": "IA, OpenAI, France",
+        "Article Main Domain": "Intelligence Artificielle",
+        "Article Source": "Le Monde",
+        "Article Content": "OpenAI annonce l'ouverture d'un bureau à Paris d'ici fin 2024, renforçant sa présence en Europe continentale et soulignant l'importance de la France en matière d'innovation technologique."
+    },
+    {
+        "ID": 7,
+        "Article Link": "https://www.lemonde.fr/economie/article/2024/08/31/l-intelligence-artificielle-est-une-bulle-il-y-a-un-decalage-entre-les-couts-tres-importants-et-les-revenus-potentiels_6300034_3234.html",
+        "Article Title": "« L'intelligence artificielle est une bulle : il y a un décalage entre les coûts, très importants, et les revenus potentiels »",
+        "Article Date": "2024-08-31",
+        "Article Author Name": "Le Monde",
+        "Article Topics": "IA, Économie, Technologie",
+        "Article Main Domain": "Intelligence Artificielle",
+        "Article Source": "Le Monde",
+        "Article Content": "Cory Doctorow critique la bulle de l'IA, signalant un déséquilibre entre les coûts élevés des technologies et les revenus potentiels, comparant ce phénomène à celui des débuts d'Internet."
+    },
+    {
+        "ID": 8,
+        "Article Link": "https://www.lemonde.fr/pixels/article/2024/08/06/comment-l-ia-bouscule-le-milieu-de-la-sante-mentale-plutot-que-de-payer-une-nouvelle-seance-chez-le-psy-j-allais-sur-chatgpt_6270640_4408996.html",
+        "Article Title": "Comment l'IA bouscule le milieu de la santé mentale : « Plutôt que de payer une nouvelle séance chez le psy, j'allais sur ChatGPT »",
+        "Article Date": "2024-08-06",
+        "Article Author Name": "Le Monde",
+        "Article Topics": "IA, Santé mentale, ChatGPT",
+        "Article Main Domain": "Intelligence Artificielle",
+        "Article Source": "Le Monde",
+        "Article Content": "Les outils d'IA, comme les chatbots, révolutionnent le domaine de la santé mentale, offrant des alternatives accessibles aux thérapies traditionnelles, mais posant également des risques et des questions éthiques."
+    },
 
     
 ]

@@ -1,7 +1,42 @@
-@prefix ai: <http://myproject.org/ai_ontology#> .
+@prefix ns1: <http://myproject.org/ai_ontology#> .
 
-ai:Article_1 a ai:Article ;
-    ai:hasAuthor "John Doe" ;
-    ai:hasContent "L'intelligence artificielle révolutionne de nombreux secteurs..." ;
-    ai:hasDate "2024-02-01" ;
-    ai:hasTitle "Introduction à l'Intelligence Artificielle" .
+ns1:Article_1 ns1:hasAuthor "Renaud Bourel" ;
+    ns1:hasContent "Emmenée par Matthieu Jalibert, titulaire de circonstance, l'équipe de France va tenter la passe de quatre face à des Anglais dans le doute mais déterminés à laver l'humiliation de 2023 (10-53). Une semaine après la rouste infligée aux malheureux Gallois, le Tournoi des 6 Nations va réellement commencer ce samedi à Twickenham (17 h 45)." ;
+    ns1:hasDate "2025-02-07" ;
+    ns1:hasTitle "L'équipe de France veut enfoncer l'Angleterre dans ses doutes" .
+
+ns1:Article_2 ns1:hasAuthor "Alexandre Lemarié" ;
+    ns1:hasContent "Une compétition européenne qui rapporte encore un peu plus à des « gros » clubs, souvent déjà en bonne santé, et une compétition nationale avec des « petits » en difficulté, qui se partagent les miettes. Plus que jamais, la Ligue 1 (L1), le championnat de France de football de première division, avance à « plusieurs vitesses », comme le soulignait un rapport sénatorial, à la fin d’octobre 2024.Cette saison, avec la nouvelle formule de la Ligue des champions (LDC), les revenus prévus par la fédération européenne (UEFA) pour les trente-six participants ont nettement augmenté. En effet, le pactole global à se partager s’élève à 2,467 milliards d’euros, ce qui représente une hausse de 400 millions d’euros par rapport à la période 2021-2024. Les quatre équipes françaises engagées – le Paris Saint-Germain (PSG), Monaco, Lille et Brest –, qui se sont toutes qualifiées pour la suite du tournoi, vont profiter de cette manne.Le club nordiste, qui a connu le meilleur parcours des formations tricolores – il occupe la 7e place à l’issue de la phase de Ligue, ce qui lui permet d’accéder directement aux huitièmes de finale –, est déjà assuré de toucher le jackpot. Selon les règles de distribution de l’UEFA, qui prévoit de multiples primes liées à la participation (18,62 millions d’euros), aux résultats (2,1 millions pour une victoire) ou au classement, le LOSC empochera au moins 51 millions d’euros. Sans compter les recettes afférentes aux droits télévisés, également distribuées par l’instance européenne, et celles de la billetterie. Au total, les Lillois devraient percevoir plus de 75 millions, d’après les estimations de L’Equipe." ;
+    ns1:hasDate "2025-02-08" ;
+    ns1:hasTitle "Comment le pactole de la Ligue des champions amplifie encore les inégalités entre les clubs de Ligue 1" .
+
+ns1:Article_3 ns1:hasAuthor "Arnold Fortin" ;
+    ns1:hasContent "Il n’y a décidément plus de match facile pour Manchester City. En grande difficulté depuis le mois d’octobre, et ce quelle que soit la compétition, l’équipe de Pep Guardiola a encore prouvé sa fragilité ce samedi en FA Cup. Pourtant opposés à Leyton Orient, pensionnaire de League One, les Citizens se sont retrouvés menés au score après un but fou.Voyant le portier mancunien avancé, Jamie Donley a tenté sa chance de près de quarante mètres et son ballon en cloche est allé taper la barre avant de rebondir dans le dos du malheureux Stefan Ortega, buteur contre son camp. De quoi donner l’avantage aux locaux dès la seizième minute de jeu dans un stade en délire.Les Skyblues ont ensuite rejoint les vestiaires avec ce petit but de retard malgré un possession de balle en leur faveur de 73% sur cette première période. Si l’équipe alignée par Pep Guardiola était largement remaniée et principalement composée de jeunes et d’habituels remplaçants, ce fait de jeu fait à nouveau tâche." ;
+    ns1:hasDate "2025-02-08" ;
+    ns1:hasTitle "Manchester City se prend un but de dingue contre une D3 (vidéo)" .
+
+ns1:Article_4 ns1:hasAuthor "vdevillaire" ;
+    ns1:hasContent "Le PSG assoit sa domination et impressionne les observateurs, le derby de Madrid électrise l’Espagne, le Real Madrid traverse une crise interne avec ses cadres, retrouvez dans votre revue de presse Foot Mercato les dernières informations de la presse sportive européenne." ;
+    ns1:hasDate "2025-02-07" ;
+    ns1:hasTitle "L’Europe s’incline face au PSG, le derby madrilène retourne toute l’Espagne" .
+
+ns1:Article_5 ns1:hasAuthor "Le Monde" ;
+    ns1:hasContent "Le Prix Nobel de physique 2024 a été décerné à John Hopfield et Geoffrey Hinton pour leurs travaux pionniers sur les réseaux de neurones artificiels, fondamentaux pour l'apprentissage automatique." ;
+    ns1:hasDate "2024-10-08" ;
+    ns1:hasTitle "Le Nobel de physique célèbre les pionniers de l'intelligence artificielle" .
+
+ns1:Article_6 ns1:hasAuthor "Le Monde" ;
+    ns1:hasContent "OpenAI annonce l'ouverture d'un bureau à Paris d'ici fin 2024, renforçant sa présence en Europe continentale et soulignant l'importance de la France en matière d'innovation technologique." ;
+    ns1:hasDate "2024-10-09" ;
+    ns1:hasTitle "OpenAI va ouvrir un bureau à Paris" .
+
+ns1:Article_7 ns1:hasAuthor "Le Monde" ;
+    ns1:hasContent "Cory Doctorow critique la bulle de l'IA, signalant un déséquilibre entre les coûts élevés des technologies et les revenus potentiels, comparant ce phénomène à celui des débuts d'Internet." ;
+    ns1:hasDate "2024-08-31" ;
+    ns1:hasTitle "« L'intelligence artificielle est une bulle : il y a un décalage entre les coûts, très importants, et les revenus potentiels »" .
+
+ns1:Article_8 ns1:hasAuthor "Le Monde" ;
+    ns1:hasContent "Les outils d'IA, comme les chatbots, révolutionnent le domaine de la santé mentale, offrant des alternatives accessibles aux thérapies traditionnelles, mais posant également des risques et des questions éthiques." ;
+    ns1:hasDate "2024-08-06" ;
+    ns1:hasTitle "Comment l'IA bouscule le milieu de la santé mentale : « Plutôt que de payer une nouvelle séance chez le psy, j'allais sur ChatGPT »" .
+
