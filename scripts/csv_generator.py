@@ -140,9 +140,96 @@ articles = [
         "Article Main Domain": "Éducation",
         "Article Source": "Le Figaro",
         "Article Content": "Selon l'enquête internationale Pirls 2021, seuls 16 pour cent des enseignants français mettent en place des mesures de différenciation pédagogique, soulignant un besoin d'adaptation des méthodes d'enseignement."
-    }
+    },
 
-
+    {
+        "ID": 13,
+        "Article Link": "https://www.futura-sciences.com/tech/actualites/voiture-94-vols-voitures-sont-realises-effraction-voici-pourquoi-votre-vehicule-est-cible-facile-104567/",
+        "Article Title": "94 % des vols de voitures sont réalisés sans effraction : voici pourquoi votre véhicule est une cible facile",
+        "Article Date": "2025-01-15",
+        "Article Author Name": "Futura Sciences",
+        "Article Topics": "Technologie, Automobile, Sécurité",
+        "Article Main Domain": "Technologie",
+        "Article Source": "Futura Sciences",
+        "Article Content": "Une étude récente révèle que 94 % des vols de voitures sont effectués sans effraction, principalement en raison de la vulnérabilité des systèmes d'entrée sans clé. Les voleurs utilisent des dispositifs pour intercepter le signal de la clé et déverrouiller le véhicule."
+    },
+    {
+        "ID": 14,
+        "Article Link": "https://www.un.org/fr/un75/impact-digital-technologies",
+        "Article Title": "L'impact des technologies numériques",
+        "Article Date": "2024-12-10",
+        "Article Author Name": "Nations Unies",
+        "Article Topics": "Technologie, Numérique, Société",
+        "Article Main Domain": "Technologie",
+        "Article Source": "Nations Unies",
+        "Article Content": "Les technologies numériques transforment les sociétés en améliorant la connectivité, l'inclusion financière et l'accès aux services. Elles présentent également des défis en matière de confidentialité, de sécurité et d'inégalités."
+    },
+    {
+        "ID": 15,
+        "Article Link": "https://www.lemonde.fr/sciences/article/2024/10/28/du-soin-a-la-surveillance-du-cerveau-sept-defis-pour-les-neurotechnologies_6363498_1650684.html",
+        "Article Title": "Du soin à la surveillance du cerveau : sept défis pour les neurotechnologies",
+        "Article Date": "2024-10-28",
+        "Article Author Name": "Le Monde",
+        "Article Topics": "Technologie, Neurotechnologies, Santé",
+        "Article Main Domain": "Technologie",
+        "Article Source": "Le Monde",
+        "Article Content": "Les neurotechnologies, telles que les implants cérébraux et les casques EEG, offrent des avancées médicales pour traiter des maladies résistantes aux traitements, mais posent des défis éthiques et de confidentialité."
+    },
+    {
+        "ID": 16,
+        "Article Link": "https://www.lemonde.fr/economie/article/2024/10/27/la-ruee-vers-l-energie-solaire-grande-gagnante-de-la-bataille-de-la-competitivite_6360750_3234.html",
+        "Article Title": "La ruée vers l'énergie solaire, grande gagnante de la bataille de la compétitivité",
+        "Article Date": "2024-10-27",
+        "Article Author Name": "Le Monde",
+        "Article Topics": "Technologie, Énergie solaire, Économie",
+        "Article Main Domain": "Technologie",
+        "Article Source": "Le Monde",
+        "Article Content": "L'énergie solaire connaît une croissance rapide, avec une augmentation de 29 % de la capacité mondiale installée en 2024. Des pays traditionnellement dépendants des énergies fossiles investissent massivement dans des projets solaires."
+    },
+{
+  "ID": 17,
+  "Article Link": "https://www.lefigaro.fr/tag/trading",
+  "Article Title": "Présidentielle américaine : un trader français mise 28 millions de dollars sur la victoire de Donald Trump",
+  "Article Date": "2024-11-05",
+  "Article Author Name": "Le Figaro",
+  "Article Topics": "Trading, Élections américaines, Paris financiers",
+  "Article Main Domain": "Trading",
+  "Article Source": "Le Figaro",
+  "Article Content": "Un trader français a parié 28 millions de dollars sur la réélection de Donald Trump lors de la présidentielle américaine de 2024, illustrant l'implication des traders dans les événements politiques majeurs."
+},
+{
+  "ID": 18,
+  "Article Link": "https://www.cafedelabourse.com/archive/article/10-conseils-pour-etre-un-meilleur-trader",
+  "Article Title": "10 conseils pour être un meilleur trader",
+  "Article Date": "2025-01-20",
+  "Article Author Name": "Café de la Bourse",
+  "Article Topics": "Trading, Conseils, Stratégies",
+  "Article Main Domain": "Trading",
+  "Article Source": "Café de la Bourse",
+  "Article Content": "Cet article propose dix conseils essentiels pour améliorer ses compétences en trading, notamment le choix du courtier, l'élaboration d'un plan de trading et l'utilisation d'outils boursiers."
+},
+{
+  "ID": 19,
+  "Article Link": "https://finance-heros.fr/trading-comment-devenir-trader/",
+  "Article Title": "Trading : tout savoir pour se lancer ! (Guide 2025)",
+  "Article Date": "2025-01-10",
+  "Article Author Name": "Finance Héros",
+  "Article Topics": "Trading, Guide, Débutants",
+  "Article Main Domain": "Trading",
+  "Article Source": "Finance Héros",
+  "Article Content": "Ce guide complet explique les bases du trading, les différents types de titres financiers et fournit des conseils pour débuter efficacement dans le domaine."
+},
+{
+  "ID": 20,
+  "Article Link": "https://www.ig.com/fr/marche-actualites-et-idees-de-trading",
+  "Article Title": "Actualités et idées de trading",
+  "Article Date": "2025-02-05",
+  "Article Author Name": "IG",
+  "Article Topics": "Trading, Actualités, Idées",
+  "Article Main Domain": "Trading",
+  "Article Source": "IG",
+  "Article Content": "IG propose des analyses récentes sur les marchés financiers, offrant des idées de trading basées sur les tendances actuelles et les événements économiques."
+},
 
     
 ]

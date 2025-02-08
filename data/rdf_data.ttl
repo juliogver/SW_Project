@@ -20,10 +20,50 @@ ns1:Article_12 ns1:hasAuthor "Le Figaro" ;
     ns1:hasDate "2024-01-24" ;
     ns1:hasTitle "Apprentissage de la lecture à l'école : un rapport parlementaire tire la sonnette d'alarme" .
 
+ns1:Article_13 ns1:hasAuthor "Futura Sciences" ;
+    ns1:hasContent "Une étude récente révèle que 94 % des vols de voitures sont effectués sans effraction, principalement en raison de la vulnérabilité des systèmes d'entrée sans clé. Les voleurs utilisent des dispositifs pour intercepter le signal de la clé et déverrouiller le véhicule." ;
+    ns1:hasDate "2025-01-15" ;
+    ns1:hasTitle "94 % des vols de voitures sont réalisés sans effraction : voici pourquoi votre véhicule est une cible facile" .
+
+ns1:Article_14 ns1:hasAuthor "Nations Unies" ;
+    ns1:hasContent "Les technologies numériques transforment les sociétés en améliorant la connectivité, l'inclusion financière et l'accès aux services. Elles présentent également des défis en matière de confidentialité, de sécurité et d'inégalités." ;
+    ns1:hasDate "2024-12-10" ;
+    ns1:hasTitle "L'impact des technologies numériques" .
+
+ns1:Article_15 ns1:hasAuthor "Le Monde" ;
+    ns1:hasContent "Les neurotechnologies, telles que les implants cérébraux et les casques EEG, offrent des avancées médicales pour traiter des maladies résistantes aux traitements, mais posent des défis éthiques et de confidentialité." ;
+    ns1:hasDate "2024-10-28" ;
+    ns1:hasTitle "Du soin à la surveillance du cerveau : sept défis pour les neurotechnologies" .
+
+ns1:Article_16 ns1:hasAuthor "Le Monde" ;
+    ns1:hasContent "L'énergie solaire connaît une croissance rapide, avec une augmentation de 29 % de la capacité mondiale installée en 2024. Des pays traditionnellement dépendants des énergies fossiles investissent massivement dans des projets solaires." ;
+    ns1:hasDate "2024-10-27" ;
+    ns1:hasTitle "La ruée vers l'énergie solaire, grande gagnante de la bataille de la compétitivité" .
+
+ns1:Article_17 ns1:hasAuthor "Le Figaro" ;
+    ns1:hasContent "Un trader français a parié 28 millions de dollars sur la réélection de Donald Trump lors de la présidentielle américaine de 2024, illustrant l'implication des traders dans les événements politiques majeurs." ;
+    ns1:hasDate "2024-11-05" ;
+    ns1:hasTitle "Présidentielle américaine : un trader français mise 28 millions de dollars sur la victoire de Donald Trump" .
+
+ns1:Article_18 ns1:hasAuthor "Café de la Bourse" ;
+    ns1:hasContent "Cet article propose dix conseils essentiels pour améliorer ses compétences en trading, notamment le choix du courtier, l'élaboration d'un plan de trading et l'utilisation d'outils boursiers." ;
+    ns1:hasDate "2025-01-20" ;
+    ns1:hasTitle "10 conseils pour être un meilleur trader" .
+
+ns1:Article_19 ns1:hasAuthor "Finance Héros" ;
+    ns1:hasContent "Ce guide complet explique les bases du trading, les différents types de titres financiers et fournit des conseils pour débuter efficacement dans le domaine." ;
+    ns1:hasDate "2025-01-10" ;
+    ns1:hasTitle "Trading : tout savoir pour se lancer ! (Guide 2025)" .
+
 ns1:Article_2 ns1:hasAuthor "Alexandre Lemarié" ;
     ns1:hasContent "Une compétition européenne qui rapporte encore un peu plus à des « gros » clubs, souvent déjà en bonne santé, et une compétition nationale avec des « petits » en difficulté, qui se partagent les miettes. Plus que jamais, la Ligue 1 (L1), le championnat de France de football de première division, avance à « plusieurs vitesses », comme le soulignait un rapport sénatorial, à la fin d’octobre 2024.Cette saison, avec la nouvelle formule de la Ligue des champions (LDC), les revenus prévus par la fédération européenne (UEFA) pour les trente-six participants ont nettement augmenté. En effet, le pactole global à se partager s’élève à 2,467 milliards d’euros, ce qui représente une hausse de 400 millions d’euros par rapport à la période 2021-2024. Les quatre équipes françaises engagées – le Paris Saint-Germain (PSG), Monaco, Lille et Brest –, qui se sont toutes qualifiées pour la suite du tournoi, vont profiter de cette manne.Le club nordiste, qui a connu le meilleur parcours des formations tricolores – il occupe la 7e place à l’issue de la phase de Ligue, ce qui lui permet d’accéder directement aux huitièmes de finale –, est déjà assuré de toucher le jackpot. Selon les règles de distribution de l’UEFA, qui prévoit de multiples primes liées à la participation (18,62 millions d’euros), aux résultats (2,1 millions pour une victoire) ou au classement, le LOSC empochera au moins 51 millions d’euros. Sans compter les recettes afférentes aux droits télévisés, également distribuées par l’instance européenne, et celles de la billetterie. Au total, les Lillois devraient percevoir plus de 75 millions, d’après les estimations de L’Equipe." ;
     ns1:hasDate "2025-02-08" ;
     ns1:hasTitle "Comment le pactole de la Ligue des champions amplifie encore les inégalités entre les clubs de Ligue 1" .
+
+ns1:Article_20 ns1:hasAuthor "IG" ;
+    ns1:hasContent "IG propose des analyses récentes sur les marchés financiers, offrant des idées de trading basées sur les tendances actuelles et les événements économiques." ;
+    ns1:hasDate "2025-02-05" ;
+    ns1:hasTitle "Actualités et idées de trading" .
 
 ns1:Article_3 ns1:hasAuthor "Arnold Fortin" ;
     ns1:hasContent "Il n’y a décidément plus de match facile pour Manchester City. En grande difficulté depuis le mois d’octobre, et ce quelle que soit la compétition, l’équipe de Pep Guardiola a encore prouvé sa fragilité ce samedi en FA Cup. Pourtant opposés à Leyton Orient, pensionnaire de League One, les Citizens se sont retrouvés menés au score après un but fou.Voyant le portier mancunien avancé, Jamie Donley a tenté sa chance de près de quarante mètres et son ballon en cloche est allé taper la barre avant de rebondir dans le dos du malheureux Stefan Ortega, buteur contre son camp. De quoi donner l’avantage aux locaux dès la seizième minute de jeu dans un stade en délire.Les Skyblues ont ensuite rejoint les vestiaires avec ce petit but de retard malgré un possession de balle en leur faveur de 73% sur cette première période. Si l’équipe alignée par Pep Guardiola était largement remaniée et principalement composée de jeunes et d’habituels remplaçants, ce fait de jeu fait à nouveau tâche." ;
