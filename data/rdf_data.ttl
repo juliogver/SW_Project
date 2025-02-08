@@ -1,102 +1,216 @@
 @prefix ns1: <http://myproject.org/ai_ontology#> .
 
-ns1:Article_1 ns1:hasAuthor "Renaud Bourel" ;
+ns1:Article_1 ns1:hasAuthor ns1:Author_Renaud_Bourel ;
     ns1:hasContent "Emmenée par Matthieu Jalibert, titulaire de circonstance, l'équipe de France va tenter la passe de quatre face à des Anglais dans le doute mais déterminés à laver l'humiliation de 2023 (10-53). Une semaine après la rouste infligée aux malheureux Gallois, le Tournoi des 6 Nations va réellement commencer ce samedi à Twickenham (17 h 45)." ;
     ns1:hasDate "2025-02-07" ;
-    ns1:hasTitle "L'équipe de France veut enfoncer l'Angleterre dans ses doutes" .
+    ns1:hasDomain "Sport" ;
+    ns1:hasTitle "L'équipe de France veut enfoncer l'Angleterre dans ses doutes" ;
+    ns1:hasTopic ns1:Topic_Angleterre,
+        ns1:Topic_France,
+        ns1:Topic_Rugby .
 
-ns1:Article_10 ns1:hasAuthor "UNESCO" ;
+ns1:Article_10 ns1:hasAuthor ns1:Author_UNESCO ;
     ns1:hasContent "L'IA offre des opportunités pour relever les défis majeurs de l'éducation, innover dans les pratiques d'enseignement et d'apprentissage, tout en veillant à l'inclusion et à l'équité." ;
     ns1:hasDate "2024-10-10" ;
-    ns1:hasTitle "L'intelligence artificielle dans l'éducation" .
+    ns1:hasDomain "Éducation" ;
+    ns1:hasTitle "L'intelligence artificielle dans l'éducation" ;
+    ns1:hasTopic ns1:Topic_IA,
+        ns1:Topic_Inclusion,
+        ns1:Topic_Éducation .
 
-ns1:Article_11 ns1:hasAuthor "Igensia Education" ;
+ns1:Article_11 ns1:hasAuthor ns1:Author_Igensia_Education ;
     ns1:hasContent "L'IA permet de personnaliser les apprentissages selon les besoins et les capacités d'assimilation de chacun, en proposant des exercices adaptés au niveau de chaque élève." ;
     ns1:hasDate "2024-08-20" ;
-    ns1:hasTitle "Rôle et impact de l'intelligence artificielle en éducation" .
+    ns1:hasDomain "Éducation" ;
+    ns1:hasTitle "Rôle et impact de l'intelligence artificielle en éducation" ;
+    ns1:hasTopic ns1:Topic_IA,
+        ns1:Topic_Personnalisation,
+        ns1:Topic_Éducation .
 
-ns1:Article_12 ns1:hasAuthor "Le Figaro" ;
+ns1:Article_12 ns1:hasAuthor ns1:Author_Le_Figaro ;
     ns1:hasContent "Selon l'enquête internationale Pirls 2021, seuls 16 pour cent des enseignants français mettent en place des mesures de différenciation pédagogique, soulignant un besoin d'adaptation des méthodes d'enseignement." ;
     ns1:hasDate "2024-01-24" ;
-    ns1:hasTitle "Apprentissage de la lecture à l'école : un rapport parlementaire tire la sonnette d'alarme" .
+    ns1:hasDomain "Éducation" ;
+    ns1:hasTitle "Apprentissage de la lecture à l'école : un rapport parlementaire tire la sonnette d'alarme" ;
+    ns1:hasTopic ns1:Topic_Lecture,
+        ns1:Topic_Rapport_parlementaire,
+        ns1:Topic_Éducation .
 
-ns1:Article_13 ns1:hasAuthor "Futura Sciences" ;
+ns1:Article_13 ns1:hasAuthor ns1:Author_Futura_Sciences ;
     ns1:hasContent "Une étude récente révèle que 94 % des vols de voitures sont effectués sans effraction, principalement en raison de la vulnérabilité des systèmes d'entrée sans clé. Les voleurs utilisent des dispositifs pour intercepter le signal de la clé et déverrouiller le véhicule." ;
     ns1:hasDate "2025-01-15" ;
-    ns1:hasTitle "94 % des vols de voitures sont réalisés sans effraction : voici pourquoi votre véhicule est une cible facile" .
+    ns1:hasDomain "Technologie" ;
+    ns1:hasTitle "94 % des vols de voitures sont réalisés sans effraction : voici pourquoi votre véhicule est une cible facile" ;
+    ns1:hasTopic ns1:Topic_Automobile,
+        ns1:Topic_Sécurité,
+        ns1:Topic_Technologie .
 
-ns1:Article_14 ns1:hasAuthor "Nations Unies" ;
+ns1:Article_14 ns1:hasAuthor ns1:Author_Nations_Unies ;
     ns1:hasContent "Les technologies numériques transforment les sociétés en améliorant la connectivité, l'inclusion financière et l'accès aux services. Elles présentent également des défis en matière de confidentialité, de sécurité et d'inégalités." ;
     ns1:hasDate "2024-12-10" ;
-    ns1:hasTitle "L'impact des technologies numériques" .
+    ns1:hasDomain "Technologie" ;
+    ns1:hasTitle "L'impact des technologies numériques" ;
+    ns1:hasTopic ns1:Topic_Numérique,
+        ns1:Topic_Société,
+        ns1:Topic_Technologie .
 
-ns1:Article_15 ns1:hasAuthor "Le Monde" ;
+ns1:Article_15 ns1:hasAuthor ns1:Author_Le_Monde ;
     ns1:hasContent "Les neurotechnologies, telles que les implants cérébraux et les casques EEG, offrent des avancées médicales pour traiter des maladies résistantes aux traitements, mais posent des défis éthiques et de confidentialité." ;
     ns1:hasDate "2024-10-28" ;
-    ns1:hasTitle "Du soin à la surveillance du cerveau : sept défis pour les neurotechnologies" .
+    ns1:hasDomain "Technologie" ;
+    ns1:hasTitle "Du soin à la surveillance du cerveau : sept défis pour les neurotechnologies" ;
+    ns1:hasTopic ns1:Topic_Neurotechnologies,
+        ns1:Topic_Santé,
+        ns1:Topic_Technologie .
 
-ns1:Article_16 ns1:hasAuthor "Le Monde" ;
+ns1:Article_16 ns1:hasAuthor ns1:Author_Le_Monde ;
     ns1:hasContent "L'énergie solaire connaît une croissance rapide, avec une augmentation de 29 % de la capacité mondiale installée en 2024. Des pays traditionnellement dépendants des énergies fossiles investissent massivement dans des projets solaires." ;
     ns1:hasDate "2024-10-27" ;
-    ns1:hasTitle "La ruée vers l'énergie solaire, grande gagnante de la bataille de la compétitivité" .
+    ns1:hasDomain "Technologie" ;
+    ns1:hasTitle "La ruée vers l'énergie solaire, grande gagnante de la bataille de la compétitivité" ;
+    ns1:hasTopic ns1:Topic_Technologie,
+        ns1:Topic_Économie,
+        ns1:Topic_Énergie_solaire .
 
-ns1:Article_17 ns1:hasAuthor "Le Figaro" ;
+ns1:Article_17 ns1:hasAuthor ns1:Author_Le_Figaro ;
     ns1:hasContent "Un trader français a parié 28 millions de dollars sur la réélection de Donald Trump lors de la présidentielle américaine de 2024, illustrant l'implication des traders dans les événements politiques majeurs." ;
     ns1:hasDate "2024-11-05" ;
-    ns1:hasTitle "Présidentielle américaine : un trader français mise 28 millions de dollars sur la victoire de Donald Trump" .
+    ns1:hasDomain "Trading" ;
+    ns1:hasTitle "Présidentielle américaine : un trader français mise 28 millions de dollars sur la victoire de Donald Trump" ;
+    ns1:hasTopic ns1:Topic_Paris_financiers,
+        ns1:Topic_Trading,
+        ns1:Topic_Élections_américaines .
 
-ns1:Article_18 ns1:hasAuthor "Café de la Bourse" ;
+ns1:Article_18 ns1:hasAuthor ns1:Author_Café_de_la_Bourse ;
     ns1:hasContent "Cet article propose dix conseils essentiels pour améliorer ses compétences en trading, notamment le choix du courtier, l'élaboration d'un plan de trading et l'utilisation d'outils boursiers." ;
     ns1:hasDate "2025-01-20" ;
-    ns1:hasTitle "10 conseils pour être un meilleur trader" .
+    ns1:hasDomain "Trading" ;
+    ns1:hasTitle "10 conseils pour être un meilleur trader" ;
+    ns1:hasTopic ns1:Topic_Conseils,
+        ns1:Topic_Stratégies,
+        ns1:Topic_Trading .
 
-ns1:Article_19 ns1:hasAuthor "Finance Héros" ;
+ns1:Article_19 ns1:hasAuthor ns1:Author_Finance_Héros ;
     ns1:hasContent "Ce guide complet explique les bases du trading, les différents types de titres financiers et fournit des conseils pour débuter efficacement dans le domaine." ;
     ns1:hasDate "2025-01-10" ;
-    ns1:hasTitle "Trading : tout savoir pour se lancer ! (Guide 2025)" .
+    ns1:hasDomain "Trading" ;
+    ns1:hasTitle "Trading : tout savoir pour se lancer ! (Guide 2025)" ;
+    ns1:hasTopic ns1:Topic_Débutants,
+        ns1:Topic_Guide,
+        ns1:Topic_Trading .
 
-ns1:Article_2 ns1:hasAuthor "Alexandre Lemarié" ;
+ns1:Article_2 ns1:hasAuthor ns1:Author_Alexandre_Lemarié ;
     ns1:hasContent "Une compétition européenne qui rapporte encore un peu plus à des « gros » clubs, souvent déjà en bonne santé, et une compétition nationale avec des « petits » en difficulté, qui se partagent les miettes. Plus que jamais, la Ligue 1 (L1), le championnat de France de football de première division, avance à « plusieurs vitesses », comme le soulignait un rapport sénatorial, à la fin d’octobre 2024.Cette saison, avec la nouvelle formule de la Ligue des champions (LDC), les revenus prévus par la fédération européenne (UEFA) pour les trente-six participants ont nettement augmenté. En effet, le pactole global à se partager s’élève à 2,467 milliards d’euros, ce qui représente une hausse de 400 millions d’euros par rapport à la période 2021-2024. Les quatre équipes françaises engagées – le Paris Saint-Germain (PSG), Monaco, Lille et Brest –, qui se sont toutes qualifiées pour la suite du tournoi, vont profiter de cette manne.Le club nordiste, qui a connu le meilleur parcours des formations tricolores – il occupe la 7e place à l’issue de la phase de Ligue, ce qui lui permet d’accéder directement aux huitièmes de finale –, est déjà assuré de toucher le jackpot. Selon les règles de distribution de l’UEFA, qui prévoit de multiples primes liées à la participation (18,62 millions d’euros), aux résultats (2,1 millions pour une victoire) ou au classement, le LOSC empochera au moins 51 millions d’euros. Sans compter les recettes afférentes aux droits télévisés, également distribuées par l’instance européenne, et celles de la billetterie. Au total, les Lillois devraient percevoir plus de 75 millions, d’après les estimations de L’Equipe." ;
     ns1:hasDate "2025-02-08" ;
-    ns1:hasTitle "Comment le pactole de la Ligue des champions amplifie encore les inégalités entre les clubs de Ligue 1" .
+    ns1:hasDomain "Sport" ;
+    ns1:hasTitle "Comment le pactole de la Ligue des champions amplifie encore les inégalités entre les clubs de Ligue 1" ;
+    ns1:hasTopic ns1:Topic_Football,
+        ns1:Topic_Ligue_1,
+        ns1:Topic_Ligue_des_champions .
 
-ns1:Article_20 ns1:hasAuthor "IG" ;
+ns1:Article_20 ns1:hasAuthor ns1:Author_IG ;
     ns1:hasContent "IG propose des analyses récentes sur les marchés financiers, offrant des idées de trading basées sur les tendances actuelles et les événements économiques." ;
     ns1:hasDate "2025-02-05" ;
-    ns1:hasTitle "Actualités et idées de trading" .
+    ns1:hasDomain "Trading" ;
+    ns1:hasTitle "Actualités et idées de trading" ;
+    ns1:hasTopic ns1:Topic_Actualités,
+        ns1:Topic_Idées,
+        ns1:Topic_Trading .
 
-ns1:Article_3 ns1:hasAuthor "Arnold Fortin" ;
+ns1:Article_3 ns1:hasAuthor ns1:Author_Arnold_Fortin ;
     ns1:hasContent "Il n’y a décidément plus de match facile pour Manchester City. En grande difficulté depuis le mois d’octobre, et ce quelle que soit la compétition, l’équipe de Pep Guardiola a encore prouvé sa fragilité ce samedi en FA Cup. Pourtant opposés à Leyton Orient, pensionnaire de League One, les Citizens se sont retrouvés menés au score après un but fou.Voyant le portier mancunien avancé, Jamie Donley a tenté sa chance de près de quarante mètres et son ballon en cloche est allé taper la barre avant de rebondir dans le dos du malheureux Stefan Ortega, buteur contre son camp. De quoi donner l’avantage aux locaux dès la seizième minute de jeu dans un stade en délire.Les Skyblues ont ensuite rejoint les vestiaires avec ce petit but de retard malgré un possession de balle en leur faveur de 73% sur cette première période. Si l’équipe alignée par Pep Guardiola était largement remaniée et principalement composée de jeunes et d’habituels remplaçants, ce fait de jeu fait à nouveau tâche." ;
     ns1:hasDate "2025-02-08" ;
-    ns1:hasTitle "Manchester City se prend un but de dingue contre une D3 (vidéo)" .
+    ns1:hasDomain "Sport" ;
+    ns1:hasTitle "Manchester City se prend un but de dingue contre une D3 (vidéo)" ;
+    ns1:hasTopic ns1:Topic_Angleterre,
+        ns1:Topic_Football,
+        ns1:Topic_Manchester_City .
 
-ns1:Article_4 ns1:hasAuthor "vdevillaire" ;
+ns1:Article_4 ns1:hasAuthor ns1:Author_vdevillaire ;
     ns1:hasContent "Le PSG assoit sa domination et impressionne les observateurs, le derby de Madrid électrise l’Espagne, le Real Madrid traverse une crise interne avec ses cadres, retrouvez dans votre revue de presse Foot Mercato les dernières informations de la presse sportive européenne." ;
     ns1:hasDate "2025-02-07" ;
-    ns1:hasTitle "L’Europe s’incline face au PSG, le derby madrilène retourne toute l’Espagne" .
+    ns1:hasDomain "Sport" ;
+    ns1:hasTitle "L’Europe s’incline face au PSG, le derby madrilène retourne toute l’Espagne" ;
+    ns1:hasTopic ns1:Topic_Football,
+        ns1:Topic_PSG,
+        ns1:Topic_Real_de_Madrid .
 
-ns1:Article_5 ns1:hasAuthor "Le Monde" ;
+ns1:Article_5 ns1:hasAuthor ns1:Author_Le_Monde ;
     ns1:hasContent "Le Prix Nobel de physique 2024 a été décerné à John Hopfield et Geoffrey Hinton pour leurs travaux pionniers sur les réseaux de neurones artificiels, fondamentaux pour l'apprentissage automatique." ;
     ns1:hasDate "2024-10-08" ;
-    ns1:hasTitle "Le Nobel de physique célèbre les pionniers de l'intelligence artificielle" .
+    ns1:hasDomain "Intelligence Artificielle" ;
+    ns1:hasTitle "Le Nobel de physique célèbre les pionniers de l'intelligence artificielle" ;
+    ns1:hasTopic ns1:Topic_IA,
+        ns1:Topic_Physique,
+        ns1:Topic_Réseaux_de_neurones .
 
-ns1:Article_6 ns1:hasAuthor "Le Monde" ;
+ns1:Article_6 ns1:hasAuthor ns1:Author_Le_Monde ;
     ns1:hasContent "OpenAI annonce l'ouverture d'un bureau à Paris d'ici fin 2024, renforçant sa présence en Europe continentale et soulignant l'importance de la France en matière d'innovation technologique." ;
     ns1:hasDate "2024-10-09" ;
-    ns1:hasTitle "OpenAI va ouvrir un bureau à Paris" .
+    ns1:hasDomain "Intelligence Artificielle" ;
+    ns1:hasTitle "OpenAI va ouvrir un bureau à Paris" ;
+    ns1:hasTopic ns1:Topic_France,
+        ns1:Topic_IA,
+        ns1:Topic_OpenAI .
 
-ns1:Article_7 ns1:hasAuthor "Le Monde" ;
+ns1:Article_7 ns1:hasAuthor ns1:Author_Le_Monde ;
     ns1:hasContent "Cory Doctorow critique la bulle de l'IA, signalant un déséquilibre entre les coûts élevés des technologies et les revenus potentiels, comparant ce phénomène à celui des débuts d'Internet." ;
     ns1:hasDate "2024-08-31" ;
-    ns1:hasTitle "« L'intelligence artificielle est une bulle : il y a un décalage entre les coûts, très importants, et les revenus potentiels »" .
+    ns1:hasDomain "Intelligence Artificielle" ;
+    ns1:hasTitle "« L'intelligence artificielle est une bulle : il y a un décalage entre les coûts, très importants, et les revenus potentiels »" ;
+    ns1:hasTopic ns1:Topic_IA,
+        ns1:Topic_Technologie,
+        ns1:Topic_Économie .
 
-ns1:Article_8 ns1:hasAuthor "Le Monde" ;
+ns1:Article_8 ns1:hasAuthor ns1:Author_Le_Monde ;
     ns1:hasContent "Les outils d'IA, comme les chatbots, révolutionnent le domaine de la santé mentale, offrant des alternatives accessibles aux thérapies traditionnelles, mais posant également des risques et des questions éthiques." ;
     ns1:hasDate "2024-08-06" ;
-    ns1:hasTitle "Comment l'IA bouscule le milieu de la santé mentale : « Plutôt que de payer une nouvelle séance chez le psy, j'allais sur ChatGPT »" .
+    ns1:hasDomain "Intelligence Artificielle" ;
+    ns1:hasTitle "Comment l'IA bouscule le milieu de la santé mentale : « Plutôt que de payer une nouvelle séance chez le psy, j'allais sur ChatGPT »" ;
+    ns1:hasTopic ns1:Topic_ChatGPT,
+        ns1:Topic_IA,
+        ns1:Topic_Santé_mentale .
 
-ns1:Article_9 ns1:hasAuthor "Académie de Paris" ;
+ns1:Article_9 ns1:hasAuthor ns1:Author_Académie_de_Paris ;
     ns1:hasContent "L'IA permet de personnaliser les apprentissages en adaptant les activités aux besoins des élèves et en offrant un soutien individualisé. Elle sert également d'assistant pédagogique pour les enseignants, facilitant le suivi des progrès des élèves." ;
     ns1:hasDate "2024-09-15" ;
-    ns1:hasTitle "L'intelligence artificielle dans l'éducation" .
+    ns1:hasDomain "Éducation" ;
+    ns1:hasTitle "L'intelligence artificielle dans l'éducation" ;
+    ns1:hasTopic ns1:Topic_IA,
+        ns1:Topic_Personnalisation_des_apprentissages,
+        ns1:Topic_Éducation .
+
+ns1:Author_Académie_de_Paris ns1:wroteArticle ns1:Article_9 .
+
+ns1:Author_Alexandre_Lemarié ns1:wroteArticle ns1:Article_2 .
+
+ns1:Author_Arnold_Fortin ns1:wroteArticle ns1:Article_3 .
+
+ns1:Author_Café_de_la_Bourse ns1:wroteArticle ns1:Article_18 .
+
+ns1:Author_Finance_Héros ns1:wroteArticle ns1:Article_19 .
+
+ns1:Author_Futura_Sciences ns1:wroteArticle ns1:Article_13 .
+
+ns1:Author_IG ns1:wroteArticle ns1:Article_20 .
+
+ns1:Author_Igensia_Education ns1:wroteArticle ns1:Article_11 .
+
+ns1:Author_Nations_Unies ns1:wroteArticle ns1:Article_14 .
+
+ns1:Author_Renaud_Bourel ns1:wroteArticle ns1:Article_1 .
+
+ns1:Author_UNESCO ns1:wroteArticle ns1:Article_10 .
+
+ns1:Author_vdevillaire ns1:wroteArticle ns1:Article_4 .
+
+ns1:Author_Le_Figaro ns1:wroteArticle ns1:Article_12,
+        ns1:Article_17 .
+
+ns1:Author_Le_Monde ns1:wroteArticle ns1:Article_15,
+        ns1:Article_16,
+        ns1:Article_5,
+        ns1:Article_6,
+        ns1:Article_7,
+        ns1:Article_8 .
 
