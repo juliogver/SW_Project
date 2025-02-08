@@ -28,12 +28,24 @@ ai:hasTopic a rdf:Property ;
     rdfs:domain ai:Article ;
     rdfs:range ai:Topic .
 
+ai:hasDomain a rdf:Property ;
+    rdfs:domain ai:Article ;
+    rdfs:range rdfs:Literal .
+
 # Définition d'une relation entre les auteurs et leurs articles
 ai:wroteArticle a rdf:Property ;
     rdfs:domain ai:Author ;
     rdfs:range ai:Article .
 
-# Ajout d'une propriété pour catégoriser les articles par domaine
-ai:hasDomain a rdf:Property ;
+# Nouvelles propriétés pour enrichir les données
+ai:isHotTopic a rdf:Property ;
+    rdfs:domain ai:Topic ;
+    rdfs:range rdfs:Literal .
+
+ai:hasRole a rdf:Property ;
+    rdfs:domain ai:Author ;
+    rdfs:range rdfs:Literal .
+
+ai:isTopNews a rdf:Property ;
     rdfs:domain ai:Article ;
     rdfs:range rdfs:Literal .
