@@ -93,6 +93,57 @@ articles = [
         "Article Content": "Les outils d'IA, comme les chatbots, révolutionnent le domaine de la santé mentale, offrant des alternatives accessibles aux thérapies traditionnelles, mais posant également des risques et des questions éthiques."
     },
 
+    {
+        "ID": 9,
+        "Article Link": "https://www.ac-paris.fr/l-intelligence-artificielle-dans-l-education-130992",
+        "Article Title": "L'intelligence artificielle dans l'éducation",
+        "Article Date": "2024-09-15",
+        "Article Author Name": "Académie de Paris",
+        "Article Topics": "IA, Éducation, Personnalisation des apprentissages",
+        "Article Main Domain": "Éducation",
+        "Article Source": "Académie de Paris",
+        "Article Content": "L'IA permet de personnaliser les apprentissages en adaptant les activités aux besoins des élèves et en offrant un soutien individualisé. Elle sert également d'assistant pédagogique pour les enseignants, facilitant le suivi des progrès des élèves."
+    },
+
+    {
+        "ID": 10,
+        "Article Link": "https://www.unesco.org/fr/digital-education/artificial-intelligence",
+        "Article Title": "L'intelligence artificielle dans l'éducation",
+        "Article Date": "2024-10-10",
+        "Article Author Name": "UNESCO",
+        "Article Topics": "IA, Éducation, Inclusion",
+        "Article Main Domain": "Éducation",
+        "Article Source": "UNESCO",
+        "Article Content": "L'IA offre des opportunités pour relever les défis majeurs de l'éducation, innover dans les pratiques d'enseignement et d'apprentissage, tout en veillant à l'inclusion et à l'équité."
+    },
+
+
+    {
+        "ID": 11,
+        "Article Link": "https://www.igensia-education.fr/actualites/impact-intelligence-artificielle-education",
+        "Article Title": "Rôle et impact de l'intelligence artificielle en éducation",
+        "Article Date": "2024-08-20",
+        "Article Author Name": "Igensia Education",
+        "Article Topics": "IA, Éducation, Personnalisation",
+        "Article Main Domain": "Éducation",
+        "Article Source": "Igensia Education",
+        "Article Content": "L'IA permet de personnaliser les apprentissages selon les besoins et les capacités d'assimilation de chacun, en proposant des exercices adaptés au niveau de chaque élève."
+    },
+
+    {
+        "ID": 12,
+        "Article Link": "https://www.lefigaro.fr/actualite-france/apprentissage-de-la-lecture-a-l-ecole-un-rapport-parlementaire-tire-la-sonnette-d-alarme-20240124",
+        "Article Title": "Apprentissage de la lecture à l'école : un rapport parlementaire tire la sonnette d'alarme",
+        "Article Date": "2024-01-24",
+        "Article Author Name": "Le Figaro",
+        "Article Topics": "Éducation, Lecture, Rapport parlementaire",
+        "Article Main Domain": "Éducation",
+        "Article Source": "Le Figaro",
+        "Article Content": "Selon l'enquête internationale Pirls 2021, seuls 16 pour cent des enseignants français mettent en place des mesures de différenciation pédagogique, soulignant un besoin d'adaptation des méthodes d'enseignement."
+    }
+
+
+
     
 ]
 
