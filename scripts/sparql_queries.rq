@@ -1,72 +1,51 @@
-# 1.1 Get all Articles and their Titles
+# 1️⃣ SPARQL Exploration Queries (Vue Générale des Données)
+
+# 1.1 Liste des articles avec leur domaine principal et date de publication
 PREFIX ai: <http://myproject.org/ai_ontology#>
-SELECT ?article ?title WHERE {
-  ?article ai:hasTitle ?title .
+SELECT ?article ?title ?domain ?date WHERE {
+  ?article ai:hasTitle ?title ;
+           ai:hasDomain ?domain ;
+           ai:hasDate ?date .
 }
 
-# 1.2 List all Authors and Their Articles
+# 1.2 Nombre total d'articles par domaine
 PREFIX ai: <http://myproject.org/ai_ontology#>
-SELECT ?author ?articleTitle WHERE {
-  ?article ai:hasAuthor ?author ;
-           ai:hasTitle ?articleTitle .
+SELECT ?domain (COUNT(?article) AS ?articleCount) WHERE {
+  ?article ai:hasDomain ?domain .
 }
+GROUP BY ?domain
 
-# 1.3 Count the Number of Articles
+# 1.3 Liste des auteurs et le nombre d'articles qu'ils ont publiés
 PREFIX ai: <http://myproject.org/ai_ontology#>
-SELECT (COUNT(?article) AS ?articleCount) WHERE {
-  ?article a ai:Article .
+SELECT ?author (COUNT(?article) AS ?numArticles) WHERE {
+  ?article ai:hasAuthor ?author .
 }
+GROUP BY ?author
+ORDER BY DESC(?numArticles)
 
-# 1.4 List Unique Topics in the Dataset
+# 1.4 Liste des sujets les plus abordés avec le nombre d'articles les contenant
 PREFIX ai: <http://myproject.org/ai_ontology#>
-SELECT DISTINCT ?topic WHERE {
+SELECT ?topic (COUNT(?article) AS ?numArticles) WHERE {
   ?article ai:hasTopic ?topic .
 }
+GROUP BY ?topic
+ORDER BY DESC(?numArticles)
 
-# 1.5 Retrieve Articles Published in a Specific Year (e.g., 2024)
+# 1.5 Récupérer les articles publiés dans les 3 derniers mois (en supposant que la date est stockée en format YYYY-MM-DD)
 PREFIX ai: <http://myproject.org/ai_ontology#>
 SELECT ?article ?title ?date WHERE {
   ?article ai:hasTitle ?title ;
            ai:hasDate ?date .
-  FILTER (STRSTARTS(STR(?date), "2024"))
+  FILTER (STRSTARTS(STR(?date), "2025-"))
 }
 
-# 2.1 Enrich RDF: Assign Domain Categories Based on Topics
-PREFIX ai: <http://myproject.org/ai_ontology#>
-CONSTRUCT {
-  ?article ai:hasDomain ?domain .
-}
-WHERE {
-  ?article ai:hasTopic ?topic .
-  
-  BIND (
-    IF(CONTAINS(LCASE(?topic), "machine learning") || CONTAINS(LCASE(?topic), "ai"), "Artificial Intelligence",
-    IF(CONTAINS(LCASE(?topic), "education"), "Education",
-    IF(CONTAINS(LCASE(?topic), "blockchain") || CONTAINS(LCASE(?topic), "crypto"), "Finance",
-    "Other"))) AS ?domain
-  )
-}
 
-# 2.2 Enrich RDF: Identify Senior Authors (Authors with 5+ Articles)
-PREFIX ai: <http://myproject.org/ai_ontology#>
-CONSTRUCT {
-  ?author ai:hasRole "Senior Author" .
-}
-WHERE {
-  {
-    SELECT ?author (COUNT(?article) AS ?articleCount)
-    WHERE {
-      ?article ai:hasAuthor ?author .
-    }
-    GROUP BY ?author
-    HAVING (?articleCount >= 5)
-  }
-}
+# 2️⃣ SPARQL Construct Queries (Enrichissement des Données)
 
-# 2.3 Enrich RDF: Detect Trending Topics (Topics with 3+ Articles)
+# 2.1 Ajouter un label "Hot Topic" aux sujets mentionnés dans au moins 4 articles
 PREFIX ai: <http://myproject.org/ai_ontology#>
 CONSTRUCT {
-  ?topic ai:isTrending "true" .
+  ?topic ai:isHotTopic "true" .
 }
 WHERE {
   {
@@ -75,29 +54,61 @@ WHERE {
       ?article ai:hasTopic ?topic .
     }
     GROUP BY ?topic
-    HAVING (?count >= 3)
+    HAVING (?count >= 4)
   }
 }
 
-# 3.1 Retrieve Articles from the "Artificial Intelligence" Domain
+# 2.2 Détecter les auteurs prolifiques (ayant écrit au moins 3 articles)
 PREFIX ai: <http://myproject.org/ai_ontology#>
-SELECT ?article ?title WHERE {
+CONSTRUCT {
+  ?author ai:hasRole "Prolific Author" .
+}
+WHERE {
+  {
+    SELECT ?author (COUNT(?article) AS ?numArticles)
+    WHERE {
+      ?article ai:hasAuthor ?author .
+    }
+    GROUP BY ?author
+    HAVING (?numArticles >= 3)
+  }
+}
+
+# 2.3 Ajouter une classification "Top News" aux articles publiés dans le dernier mois
+PREFIX ai: <http://myproject.org/ai_ontology#>
+CONSTRUCT {
+  ?article ai:isTopNews "true" .
+}
+WHERE {
+  ?article ai:hasDate ?date .
+  FILTER (STRSTARTS(STR(?date), "2025-02"))
+}
+
+
+# 3️⃣ SPARQL Queries on Enriched RDF (Extraction d'Informations Avancées)
+
+# 3.1 Trouver les articles classés comme "Top News"
+PREFIX ai: <http://myproject.org/ai_ontology#>
+SELECT ?article ?title ?date WHERE {
   ?article ai:hasTitle ?title ;
-           ai:hasDomain "Artificial Intelligence" .
+           ai:hasDate ?date ;
+           ai:isTopNews "true" .
 }
+ORDER BY DESC(?date)
 
-# 3.2 List Senior Authors and Their Number of Articles
-PREFIX ai: <http://myproject.org/ai_ontology#>
-SELECT ?author (COUNT(?article) AS ?numArticles) WHERE {
-  ?author ai:hasRole "Senior Author" .
-  ?article ai:hasAuthor ?author .
-}
-GROUP BY ?author
-
-# 3.3 Find All Trending Topics and Associated Articles
+# 3.2 Récupérer les sujets marqués comme "Hot Topic" et les articles associés
 PREFIX ai: <http://myproject.org/ai_ontology#>
 SELECT ?topic ?article ?title WHERE {
-  ?topic ai:isTrending "true" .
+  ?topic ai:isHotTopic "true" .
   ?article ai:hasTopic ?topic ;
+           ai:hasTitle ?title .
+}
+ORDER BY ?topic
+
+# 3.3 Liste des auteurs prolifiques et leurs articles
+PREFIX ai: <http://myproject.org/ai_ontology#>
+SELECT ?author ?article ?title WHERE {
+  ?author ai:hasRole "Prolific Author" .
+  ?article ai:hasAuthor ?author ;
            ai:hasTitle ?title .
 }
