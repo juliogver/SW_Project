@@ -1,0 +1,29 @@
+@prefix ex: <http://example.org/articles#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Définition des Classes
+ex:Article a rdfs:Class .
+ex:Author a rdfs:Class .
+ex:Topic a rdfs:Class .
+
+# Définition des Propriétés
+ex:hasTitle a rdf:Property ;
+    rdfs:domain ex:Article ;
+    rdfs:range rdfs:Literal .
+
+ex:hasAuthor a rdf:Property ;
+    rdfs:domain ex:Article ;
+    rdfs:range ex:Author .
+
+ex:hasDate a rdf:Property ;
+    rdfs:domain ex:Article ;
+    rdfs:range rdfs:Literal .
+
+ex:hasContent a rdf:Property ;
+    rdfs:domain ex:Article ;
+    rdfs:range rdfs:Literal .
+
+ex:hasTopic a rdf:Property ;
+    rdfs:domain ex:Article ;
+    rdfs:range ex:Topic .
