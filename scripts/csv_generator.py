@@ -26,7 +26,7 @@ output_dir = "../data/"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-csv_path = os.path.join(output_dir, "dataset.csv")
+csv_path = os.path.join(output_dir, "articles.csv")
 
 df.to_csv(csv_path, index=False, encoding="utf-8")
 

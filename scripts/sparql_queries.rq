@@ -1,0 +1,4 @@
+PREFIX ex: <http://example.com/ontology#>
+SELECT ?title WHERE {
+  ?article ex:hasTitle ?title .
+}

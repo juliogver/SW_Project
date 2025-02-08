@@ -2,6 +2,13 @@ pandas
 numpy
 riot
 rdflib
+requests
+beautifulsoup4
+sparqlwrapper
+flask
+transformers
+tensorflow
+torch
 
 
 
