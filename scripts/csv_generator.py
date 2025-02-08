@@ -186,50 +186,50 @@ articles = [
         "Article Source": "Le Monde",
         "Article Content": "L'énergie solaire connaît une croissance rapide, avec une augmentation de 29 % de la capacité mondiale installée en 2024. Des pays traditionnellement dépendants des énergies fossiles investissent massivement dans des projets solaires."
     },
-{
-  "ID": 17,
-  "Article Link": "https://www.lefigaro.fr/tag/trading",
-  "Article Title": "Présidentielle américaine : un trader français mise 28 millions de dollars sur la victoire de Donald Trump",
-  "Article Date": "2024-11-05",
-  "Article Author Name": "Le Figaro",
-  "Article Topics": "Trading, Élections américaines, Paris financiers",
-  "Article Main Domain": "Trading",
-  "Article Source": "Le Figaro",
-  "Article Content": "Un trader français a parié 28 millions de dollars sur la réélection de Donald Trump lors de la présidentielle américaine de 2024, illustrant l'implication des traders dans les événements politiques majeurs."
-},
-{
-  "ID": 18,
-  "Article Link": "https://www.cafedelabourse.com/archive/article/10-conseils-pour-etre-un-meilleur-trader",
-  "Article Title": "10 conseils pour être un meilleur trader",
-  "Article Date": "2025-01-20",
-  "Article Author Name": "Café de la Bourse",
-  "Article Topics": "Trading, Conseils, Stratégies",
-  "Article Main Domain": "Trading",
-  "Article Source": "Café de la Bourse",
-  "Article Content": "Cet article propose dix conseils essentiels pour améliorer ses compétences en trading, notamment le choix du courtier, l'élaboration d'un plan de trading et l'utilisation d'outils boursiers."
-},
-{
-  "ID": 19,
-  "Article Link": "https://finance-heros.fr/trading-comment-devenir-trader/",
-  "Article Title": "Trading : tout savoir pour se lancer ! (Guide 2025)",
-  "Article Date": "2025-01-10",
-  "Article Author Name": "Finance Héros",
-  "Article Topics": "Trading, Guide, Débutants",
-  "Article Main Domain": "Trading",
-  "Article Source": "Finance Héros",
-  "Article Content": "Ce guide complet explique les bases du trading, les différents types de titres financiers et fournit des conseils pour débuter efficacement dans le domaine."
-},
-{
-  "ID": 20,
-  "Article Link": "https://www.ig.com/fr/marche-actualites-et-idees-de-trading",
-  "Article Title": "Actualités et idées de trading",
-  "Article Date": "2025-02-05",
-  "Article Author Name": "IG",
-  "Article Topics": "Trading, Actualités, Idées",
-  "Article Main Domain": "Trading",
-  "Article Source": "IG",
-  "Article Content": "IG propose des analyses récentes sur les marchés financiers, offrant des idées de trading basées sur les tendances actuelles et les événements économiques."
-},
+    {
+        "ID": 17,
+        "Article Link": "https://www.lefigaro.fr/tag/trading",
+        "Article Title": "Présidentielle américaine : un trader français mise 28 millions de dollars sur la victoire de Donald Trump",
+        "Article Date": "2024-11-05",
+        "Article Author Name": "Le Figaro",
+        "Article Topics": "Trading, Élections américaines, Paris financiers",
+        "Article Main Domain": "Trading",
+        "Article Source": "Le Figaro",
+        "Article Content": "Un trader français a parié 28 millions de dollars sur la réélection de Donald Trump lors de la présidentielle américaine de 2024, illustrant l'implication des traders dans les événements politiques majeurs."
+    },
+    {
+        "ID": 18,
+        "Article Link": "https://www.cafedelabourse.com/archive/article/10-conseils-pour-etre-un-meilleur-trader",
+        "Article Title": "10 conseils pour être un meilleur trader",
+        "Article Date": "2025-01-20",
+        "Article Author Name": "Café de la Bourse",
+        "Article Topics": "Trading, Conseils, Stratégies",
+        "Article Main Domain": "Trading",
+        "Article Source": "Café de la Bourse",
+        "Article Content": "Cet article propose dix conseils essentiels pour améliorer ses compétences en trading, notamment le choix du courtier, l'élaboration d'un plan de trading et l'utilisation d'outils boursiers."
+    },
+    {
+        "ID": 19,
+        "Article Link": "https://finance-heros.fr/trading-comment-devenir-trader/",
+        "Article Title": "Trading : tout savoir pour se lancer ! (Guide 2025)",
+        "Article Date": "2025-01-10",
+        "Article Author Name": "Finance Héros",
+        "Article Topics": "Trading, Guide, Débutants",
+        "Article Main Domain": "Trading",
+        "Article Source": "Finance Héros",
+        "Article Content": "Ce guide complet explique les bases du trading, les différents types de titres financiers et fournit des conseils pour débuter efficacement dans le domaine."
+    },
+    {
+        "ID": 20,
+        "Article Link": "https://www.ig.com/fr/marche-actualites-et-idees-de-trading",
+        "Article Title": "Actualités et idées de trading",
+        "Article Date": "2025-02-05",
+        "Article Author Name": "IG",
+        "Article Topics": "Trading, Actualités, Idées",
+        "Article Main Domain": "Trading",
+        "Article Source": "IG",
+        "Article Content": "IG propose des analyses récentes sur les marchés financiers, offrant des idées de trading basées sur les tendances actuelles et les événements économiques."
+    },
 
     
 ]
