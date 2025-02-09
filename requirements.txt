@@ -9,6 +9,8 @@ flask
 transformers
 tensorflow
 torch
+spacy
+
 
 
 
