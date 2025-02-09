@@ -1,4 +1,4 @@
-# 1️⃣ SPARQL Exploration Queries (Vue Générale des Données)
+
 
 # 1.1 Liste des articles avec leur domaine principal et date de publication
 PREFIX ai: <http://myproject.org/ai_ontology#>
@@ -7,6 +7,7 @@ SELECT ?article ?title ?domain ?date WHERE {
            ai:hasDomain ?domain ;
            ai:hasDate ?date .
 }
+
 
 # 1.2 Nombre total d'articles par domaine
 PREFIX ai: <http://myproject.org/ai_ontology#>
@@ -40,7 +41,7 @@ SELECT ?article ?title ?date WHERE {
 }
 
 
-# 2️⃣ SPARQL Construct Queries (Enrichissement des Données)
+
 
 # 2.1 Ajouter un label "Hot Topic" aux sujets mentionnés dans au moins 4 articles
 PREFIX ai: <http://myproject.org/ai_ontology#>
@@ -85,7 +86,6 @@ WHERE {
 }
 
 
-# 3️⃣ SPARQL Queries on Enriched RDF (Extraction d'Informations Avancées)
 
 # 3.1 Trouver les articles classés comme "Top News"
 PREFIX ai: <http://myproject.org/ai_ontology#>
