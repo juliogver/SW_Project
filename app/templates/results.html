@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARQL Query Results</title>
+</head>
+<body>
+    <h1>Results for Query: {{ query }}</h1>
+
+    {% if results and results|length > 0 %}
+        <table border="1">
+            <thead>
+                <tr>
+                    {% for column in results[0].keys() %}
+                        <th>{{ column }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results %}
+                    <tr>
+                        {% for value in row.values() %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No results found for this query.</p>
+    {% endif %}
+
+    <a href="/">Go back to the query selection page</a>
+</body>
+</html>

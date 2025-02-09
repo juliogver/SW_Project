@@ -1,5 +1,3 @@
-
-
 # 1.1 Liste des articles avec leur domaine principal et date de publication
 PREFIX ai: <http://myproject.org/ai_ontology#>
 SELECT ?article ?title ?domain ?date WHERE {
@@ -7,7 +5,6 @@ SELECT ?article ?title ?domain ?date WHERE {
            ai:hasDomain ?domain ;
            ai:hasDate ?date .
 }
-
 
 # 1.2 Nombre total d'articles par domaine
 PREFIX ai: <http://myproject.org/ai_ontology#>
@@ -39,9 +36,6 @@ SELECT ?article ?title ?date WHERE {
            ai:hasDate ?date .
   FILTER (STRSTARTS(STR(?date), "2025-"))
 }
-
-
-
 
 # 2.1 Ajouter un label "Hot Topic" aux sujets mentionnés dans au moins 4 articles
 PREFIX ai: <http://myproject.org/ai_ontology#>

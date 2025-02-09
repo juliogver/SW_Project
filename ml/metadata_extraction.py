@@ -96,4 +96,4 @@ for _, row in df.iterrows():
 # Sauvegarde du graphe RDF mis à jour
 g.serialize("../data/rdf_data.ttl", format="turtle")
 
-print("✅ Métadonnées extraites et RDF mis à jour avec succès !")
+print("Métadonnées extraites et RDF mis à jour avec succès !")
