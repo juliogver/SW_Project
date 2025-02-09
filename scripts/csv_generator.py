@@ -1,9 +1,8 @@
 import pandas as pd
 import os
 
-# Définition des articles (données fictives, à remplacer par un scraping ou API)
+# Définition des articles 
 articles = [
-    # Articles Sport
     {
         "ID": 1,
         "Article Link": "https://www.lequipe.fr/Rugby/Article/Avec-matthieu-jalibert-en-ouvreur-les-bleus-veulent-enfoncer-l-angleterre-dans-ses-doutes-samedi-a-twickenham/1538377",
@@ -237,7 +236,7 @@ articles = [
 # Création du DataFrame
 df = pd.DataFrame(articles)
 
-# Enregistrer dans un sous-dossier du projet (ex: ./data/)
+# Enregistrer dans le sous-dossier data
 output_dir = "../data/"
 
 if not os.path.exists(output_dir):

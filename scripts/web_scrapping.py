@@ -55,11 +55,11 @@ if os.path.exists(ARTICLES_CSV):
 else:
     df_existing = pd.DataFrame()
     existing_ids = set()
-    next_id = 1  # Commencer les IDs à 1 s'il n'y a pas de fichier existant
+    next_id = 1  
 
 # Fonction pour scraper un article
 def scrape_article(source_name, url, category):
-    global next_id  # Utilisation de la variable globale pour incrémenter l'ID
+    global next_id  
 
     try:
         response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -70,15 +70,15 @@ def scrape_article(source_name, url, category):
         title = soup.find("h1") or soup.find("title")
         title = title.text.strip() if title else "Titre non trouvé"
 
-        # Extraction de la date (format ISO : YYYY-MM-DD)
+        # Extraction de la date 
         date = soup.find("time")
         date = date["datetime"][:10] if date and "datetime" in date.attrs else generate_random_date()
 
         # Extraction de l'auteur
         author = soup.find(class_="author") or soup.find("span", class_="byline")
-        author = author.text.strip() if author else random.choice(fake_authors)  # Remplace "Inconnu"
+        author = author.text.strip() if author else random.choice(fake_authors)  
 
-        # Extraction du contenu (500 premiers caractères)
+        # Extraction du contenu 
         content = soup.find("article") or soup.find("p")
         content = content.text.strip()[:500] if content else "Contenu non trouvé"
 
@@ -87,15 +87,15 @@ def scrape_article(source_name, url, category):
             "ID": next_id,
             "Article Link": url,
             "Article Title": title,
-            "Article Date": date,  # Format ISO (YYYY-MM-DD)
+            "Article Date": date,  
             "Article Author Name": author,
             "Article Topics": category,
             "Article Main Domain": category,
-            "Article Source": source_name,  # Nom propre de la source
+            "Article Source": source_name,  
             "Article Content": content
         }
 
-        next_id += 1  # Incrémentation pour le prochain article
+        next_id += 1  
 
         return article
 
@@ -112,7 +112,7 @@ for category, source_data in sources.items():
         article = scrape_article(source_name, url, category)
         if article:
             articles_list.append(article)
-        time.sleep(random.uniform(2, 5))  # Pause pour éviter d'être bloqué
+        time.sleep(random.uniform(2, 5))  
 
 # Convertir en DataFrame et fusionner avec `articles.csv`
 df_scraped = pd.DataFrame(articles_list)

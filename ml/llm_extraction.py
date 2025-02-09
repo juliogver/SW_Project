@@ -46,19 +46,19 @@ def extract_metadata_llm(content):
         api_key=OPENAI_API_KEY
     )
 
-    # 🔹 Nettoyer les backticks de la réponse
+    # Nettoyer les backticks de la réponse
     raw_response = response["choices"][0]["message"]["content"].strip()
     
     if raw_response.startswith("```json"):
         raw_response = raw_response.replace("```json", "").replace("```", "").strip()
 
-    # 🔹 Convertir la réponse en JSON
+    # Convertir la réponse en JSON
     try:
         metadata = json.loads(raw_response)
     except json.JSONDecodeError:
         print("Erreur : Impossible de parser la réponse LLM en JSON.")
-        print("Réponse reçue :", raw_response)  # Debugging
-        return None  # Retourne `None` si la réponse n'est pas un JSON valide
+        print("Réponse reçue :", raw_response)  
+        return None  
     
     return metadata
 

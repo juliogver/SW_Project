@@ -13,12 +13,12 @@ EX = Namespace("http://myproject.org/ai_ontology#")
 # Ajouter des articles au graphe
 for _, row in df.iterrows():
     article_uri = URIRef(EX[f"Article_{row['ID']}"])
-    author_uri = URIRef(EX[f"Author_{row['Article Author Name'].replace(' ', '_')}"])  # Pour créer un URI propre
+    author_uri = URIRef(EX[f"Author_{row['Article Author Name'].replace(' ', '_')}"])  
     domain_uri = Literal(row["Article Main Domain"])
     
     # Ajout des propriétés de base
     g.add((article_uri, EX.hasTitle, Literal(row["Article Title"])))
-    g.add((article_uri, EX.hasAuthor, author_uri))  # URI pour l'auteur
+    g.add((article_uri, EX.hasAuthor, author_uri)) 
     g.add((article_uri, EX.hasDate, Literal(row["Article Date"])))
     g.add((article_uri, EX.hasContent, Literal(row["Article Content"])))
     g.add((article_uri, EX.hasDomain, domain_uri))
@@ -27,9 +27,9 @@ for _, row in df.iterrows():
     g.add((author_uri, EX.wroteArticle, article_uri))
 
     # Ajout des sujets (topics)
-    topics = row["Article Topics"].split(", ")  # Séparation des sujets par virgule
+    topics = row["Article Topics"].split(", ")  
     for topic in topics:
-        topic_uri = URIRef(EX[f"Topic_{topic.replace(' ', '_')}"])  # Créer un URI propre pour le topic
+        topic_uri = URIRef(EX[f"Topic_{topic.replace(' ', '_')}"])  
         g.add((article_uri, EX.hasTopic, topic_uri))
 
 # Sauvegarde du graphe RDF

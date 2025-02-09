@@ -46,7 +46,7 @@ def query():
         for triple in new_triples:
             print(triple)
 
-        # Optionally save to the TTL file (if permanent storage is needed)
+        # Optionally save to the TTL file 
         g.serialize(destination="../data/rdf_data.ttl", format="turtle")
 
         # Query newly added triples for confirmation

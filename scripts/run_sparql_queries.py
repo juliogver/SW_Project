@@ -9,7 +9,7 @@ g.parse("../data/rdf_data.ttl", format="turtle")
 
 # Charger et nettoyer les requêtes SPARQL
 with open("sparql_queries.rq", "r", encoding="utf-8") as f:
-    queries = [q.strip() for q in f.read().split("\n\n") if q.strip()]  # Suppression des requêtes vides
+    queries = [q.strip() for q in f.read().split("\n\n") if q.strip()]  
 
 # Fonction pour enlever les commentaires SPARQL
 def clean_query(query):
