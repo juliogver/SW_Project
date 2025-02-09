@@ -6,11 +6,11 @@ import random
 import time
 from datetime import datetime, timedelta
 
-# 📌 Chemins des fichiers CSV
+# Chemins des fichiers CSV
 DATA_DIR = "../data/"
 ARTICLES_CSV = os.path.join(DATA_DIR, "articles.csv")
 
-# 📌 Liste des sources GRATUITES par thème
+# Liste des sources GRATUITES par thème
 sources = {
     "Technologie": {
         "Numerama": "https://www.numerama.com/",
@@ -34,20 +34,20 @@ sources = {
     }
 }
 
-# 📌 Liste d'auteurs fictifs pour remplacer "Auteur Inconnu"
+# Liste d'auteurs fictifs pour remplacer "Auteur Inconnu"
 fake_authors = [
     "Jean Dupont", "Alice Martin", "Luc Lefebvre", "Sophie Bernard", "Éric Moreau",
     "Isabelle Fontaine", "Pierre Lambert", "Camille Durand", "Antoine Girard", "Julie Rousseau"
 ]
 
-# 📌 Générer une date aléatoire entre "2024-01-01" et "2025-02-09"
+# Générer une date aléatoire entre "2024-01-01" et "2025-02-09"
 def generate_random_date():
     start_date = datetime(2024, 1, 1)
     end_date = datetime(2025, 2, 9)
     random_days = random.randint(0, (end_date - start_date).days)
     return (start_date + timedelta(days=random_days)).strftime("%Y-%m-%d")
 
-# 📌 Charger les articles existants pour éviter les doublons et gérer les ID
+# Charger les articles existants pour éviter les doublons et gérer les ID
 if os.path.exists(ARTICLES_CSV):
     df_existing = pd.read_csv(ARTICLES_CSV)
     existing_ids = set(df_existing["ID"])
@@ -57,7 +57,7 @@ else:
     existing_ids = set()
     next_id = 1  # Commencer les IDs à 1 s'il n'y a pas de fichier existant
 
-# 📌 Fonction pour scraper un article
+# Fonction pour scraper un article
 def scrape_article(source_name, url, category):
     global next_id  # Utilisation de la variable globale pour incrémenter l'ID
 
@@ -100,27 +100,27 @@ def scrape_article(source_name, url, category):
         return article
 
     except Exception as e:
-        print(f"⚠️ Erreur lors du scraping {url}: {e}")
+        print(f"Erreur lors du scraping {url}: {e}")
         return None
 
-# 📌 Récupération des articles scrappés
+# Récupération des articles scrappés
 articles_list = []
 
 for category, source_data in sources.items():
     for source_name, url in source_data.items():
-        print(f"🔍 Scraping {category} depuis {source_name}...")
+        print(f"Scraping {category} depuis {source_name}...")
         article = scrape_article(source_name, url, category)
         if article:
             articles_list.append(article)
         time.sleep(random.uniform(2, 5))  # Pause pour éviter d'être bloqué
 
-# 📌 Convertir en DataFrame et fusionner avec `articles.csv`
+# Convertir en DataFrame et fusionner avec `articles.csv`
 df_scraped = pd.DataFrame(articles_list)
 
 if not df_scraped.empty:
     df_final = pd.concat([df_existing, df_scraped], ignore_index=True)
     df_final.to_csv(ARTICLES_CSV, index=False, encoding="utf-8")
-    print(f"✅ {len(df_scraped)} nouveaux articles ajoutés à {ARTICLES_CSV} !")
+    print(f"{len(df_scraped)} nouveaux articles ajoutés à {ARTICLES_CSV} !")
 else:
-    print("⚠️ Aucun nouvel article n'a été ajouté.")
+    print("Aucun nouvel article n'a été ajouté.")
 
