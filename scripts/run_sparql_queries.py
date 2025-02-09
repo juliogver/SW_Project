@@ -36,4 +36,4 @@ for i, query in enumerate(queries, 1):
             print(formatted_row)
             
     except Exception as e:
-        print(f"⚠️ Erreur dans la requête {i}: {e}")
+        print(f"Erreur dans la requête {i}: {e}")
