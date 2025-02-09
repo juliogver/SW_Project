@@ -110,6 +110,6 @@ for _, row in df.iterrows():
         g.add((article_uri, EX.hasLocation, loc_uri))
 
 # Save updated RDF graph
-g.serialize("../data/rdf_data_llm.ttl", format="turtle")
+g.serialize("../data/rdf_data.ttl", format="turtle")
 
-print("✅ Metadata extracted using LLM and RDF updated successfully!")
+print("Metadata extracted using LLM and RDF updated successfully!")

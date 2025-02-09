@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Load the RDF graph
 g = Graph()
-g.parse("../data/rdf_data_llm.ttl", format="turtle")
+g.parse("../data/rdf_data.ttl", format="turtle")
 
 # Load SPARQL queries from sparql_queries.rq
 def load_queries(file_path):

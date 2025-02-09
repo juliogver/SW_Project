@@ -49,7 +49,7 @@ WHERE {
       ?article ai:hasTopic ?topic .
     }
     GROUP BY ?topic
-    HAVING (?count >= 4)
+    HAVING (COUNT(?article) >= 4)
   }
 }
 
@@ -65,7 +65,7 @@ WHERE {
       ?article ai:hasAuthor ?author .
     }
     GROUP BY ?author
-    HAVING (?numArticles >= 3)
+    HAVING (COUNT(?article) >= 3)
   }
 }
 
