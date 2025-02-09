@@ -29,7 +29,7 @@ SELECT ?topic (COUNT(?article) AS ?numArticles) WHERE {
 GROUP BY ?topic
 ORDER BY DESC(?numArticles)
 
-# 1.5 Récupérer les articles publiés dans les 3 derniers mois (en supposant que la date est stockée en format YYYY-MM-DD)
+# 1.5 Récupérer les articles publiés dans les 3 derniers mois 
 PREFIX ai: <http://myproject.org/ai_ontology#>
 SELECT ?article ?title ?date WHERE {
   ?article ai:hasTitle ?title ;
