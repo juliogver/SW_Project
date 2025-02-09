@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SPARQL Query Interface</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>SPARQL Query Interface</title>
 </head>
-
 <body>
-    <h1>Select a SPARQL Query</h1>
+    <h1>SPARQL Query Interface</h1>
     <form action="/query" method="POST">
-        <select name="query">
+        <label for="query">Choose a query:</label>
+        <select id="query" name="query">
             {% for query in queries %}
                 <option value="{{ query }}">{{ query }}</option>
             {% endfor %}
         </select>
-        <button type="submit">Run Query</button>
+        <button type="submit">Execute Query</button>
     </form>
 </body>
 </html>

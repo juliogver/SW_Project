@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <title>Query Results - {{ query }}</title>
+    <title>Construct Query Results - {{ query }}</title>
 </head>
 <body>
-    <h1>Results for {{ query }}</h1>
+    <h1>Generated Triples for {{ query }}</h1>
     
     {% if results %}
         <table border="1">
             <thead>
                 <tr>
-                    {% for key in results[0].keys() %}
-                        <th>{{ key }}</th>
-                    {% endfor %}
+                    <th>Subject</th>
+                    <th>Predicate</th>
+                    <th>Object</th>
                 </tr>
             </thead>
             <tbody>
                 {% for row in results %}
                     <tr>
-                        {% for value in row.values() %}
-                            <td>{{ value }}</td>
-                        {% endfor %}
+                        <td>{{ row.subject }}</td>
+                        <td>{{ row.predicate }}</td>
+                        <td>{{ row.object }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
         </table>
     {% else %}
-        <p>No results found.</p>
+        <p>No triples were generated.</p>
     {% endif %}
     
     <a href="/">Back to query selection</a>
