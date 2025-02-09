@@ -94,6 +94,6 @@ for _, row in df.iterrows():
         g.add((article_uri, EX.hasLocation, loc_uri))
 
 # Sauvegarde du graphe RDF mis à jour
-g.serialize("../data/rdf_data_ml.ttl", format="turtle")
+g.serialize("../data/rdf_data.ttl", format="turtle")
 
 print("✅ Métadonnées extraites et RDF mis à jour avec succès !")
