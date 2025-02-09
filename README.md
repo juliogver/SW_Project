@@ -60,5 +60,4 @@ cd ..\app\
 python .\reporting.py    
 ```
 
-Assurez-vous que votre environnement Python est correctement configuré et que toutes les installations sont bien effectuées.
 
