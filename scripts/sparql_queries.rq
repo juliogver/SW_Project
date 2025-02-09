@@ -79,8 +79,6 @@ WHERE {
   FILTER (STRSTARTS(STR(?date), "2025-02"))
 }
 
-
-
 # 3.1 Trouver les articles classés comme "Top News"
 PREFIX ai: <http://myproject.org/ai_ontology#>
 SELECT ?article ?title ?date WHERE {
