@@ -56,7 +56,7 @@ def extract_metadata_llm(content):
     try:
         metadata = json.loads(raw_response)
     except json.JSONDecodeError:
-        print("❌ Erreur : Impossible de parser la réponse LLM en JSON.")
+        print("Erreur : Impossible de parser la réponse LLM en JSON.")
         print("Réponse reçue :", raw_response)  # Debugging
         return None  # Retourne `None` si la réponse n'est pas un JSON valide
     
