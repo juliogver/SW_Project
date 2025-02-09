@@ -35,9 +35,12 @@ def query():
     sparql_query = queries[query_name]
     sparql_result = g.query(sparql_query)
 
-    # Convertir SPARQLResult en liste de dictionnaires
+    # Convert SPARQLResult into a list of dictionaries with cleaned URIs
     results = [
-        {str(var): str(row[var]) for var in sparql_result.vars}
+        {
+            str(var): str(row[var]).split("#")[-1] if "#" in str(row[var]) else str(row[var])
+            for var in sparql_result.vars
+        }
         for row in sparql_result
     ]
 

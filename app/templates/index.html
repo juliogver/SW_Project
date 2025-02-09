@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><title>SPARQL Query Interface</title></head>
+<head>
+    <title>SPARQL Query Interface</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
 <body>
     <h1>Select a SPARQL Query</h1>
     <form action="/query" method="POST">

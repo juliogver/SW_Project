@@ -29,7 +29,11 @@ for i, query in enumerate(queries, 1):
         
         # Afficher correctement les résultats
         for row in results:
-            print(tuple(str(value) for value in row))
+            formatted_row = tuple(
+                str(value).split("#")[-1] if isinstance(value, str) and "#" in str(value) else str(value)
+                for value in row
+            )
+            print(formatted_row)
             
     except Exception as e:
         print(f"⚠️ Erreur dans la requête {i}: {e}")
