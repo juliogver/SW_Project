@@ -4,6 +4,9 @@ from rdflib import Graph
 g = Graph()
 g.parse("../data/rdf_data.ttl", format="turtle")
 
+# Quand on veut utiliser le ml 
+# g.parse("../data/rdf_data_ml.ttl", format="turtle")
+
 # Charger et nettoyer les requêtes SPARQL
 with open("sparql_queries.rq", "r", encoding="utf-8") as f:
     queries = [q.strip() for q in f.read().split("\n\n") if q.strip()]  # Suppression des requêtes vides
